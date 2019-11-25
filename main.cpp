@@ -1,13 +1,12 @@
 #include <SFML/Graphics.hpp>
 #include <iostream>
 
-int main(){
+int main(int argc, char* argv[]){
     int height{};
     int width{};
     sf::Image img;
     sf::Color pixel;
-    // place the image at the same folder where the binary is!
-    if(img.loadFromFile("img.png")){
+    if(img.loadFromFile(argv[1])){
     sf::Vector2u imgSize = img.getSize();
     height = imgSize.y;
     width = imgSize.x;
@@ -35,6 +34,6 @@ int main(){
 
     }
 
-    std::cout << "failed to read 'img.png'\n";
+    std::cout << "failed to read image file provided\n";
     return 1;
 }
