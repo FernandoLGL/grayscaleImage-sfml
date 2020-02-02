@@ -1,2 +1,2 @@
-# grayscaleImage-sfml
-A simple program that takes in an image and grayscales it
+# grayscale
+A command line tool that takes in an image and grayscales it
